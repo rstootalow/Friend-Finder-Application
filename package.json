@@ -1,0 +1,27 @@
+{
+  "name": "friend-finder-application",
+  "version": "1.0.0",
+  "description": "friend finder application",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rstootalow/Friend-Finder-Application.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "rstutalo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rstootalow/Friend-Finder-Application/issues"
+  },
+  "homepage": "https://github.com/rstootalow/Friend-Finder-Application#readme",
+  "dependencies": {
+    "inquirer": "^6.2.2",
+    "path": "^0.12.7"
+  }
+}
