@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
     <!-- CSS -->
     <link rel="stylesheet" href="../app/styles/style.css">
     <!-- FONT AWESOME -->
@@ -13,164 +17,164 @@
     <!-- GOOGLE FONTS -->
     <title>Document</title>
 </head>
-<body id="bootstrap-override">
+<body id="materialize-override">
     <section class="container">
         <h1>Survey Questions</h1>
         <hr>
+        <h3>Answer each statement by indicating your level of agreement or disagreement.</h3>
     </section>
+    <hr>
     <section class="container user-input">
-        <h3>About You</h3>
-        <h4>Name (Required)</h4>
-        <input type="text" id="name" class="form-control" required>
-        <h3>Link to Photo Image (Required)</h3>
-        <input type="text" id="photo" class="form-control" required>
+        <div class="input-field">
+            <h3>About You</h3>
+            <h4>Name (Required)</h4>
+            <input type="text" id="name" class="form-control" placeholder="Enter Your Name Here" required>
+            <h3>Link to Photo Image (Required)</h3>
+            <input type="text" id="photo" class="form-control" placeholder="Enter a Photo of Yourself" required>
+        </div>
     </section>
-    <section class="container questions">
-        <h3>Question 1</h3>
-        <h4>Placeholder Question</h4>
-        <form action="">
-            <input list="choices" name="choices">
-            <datalist id="choices">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-            </datalist>
-            <input type="submit">
-        </form>
-        <h3>Question 2</h3>
-        <h4>Placeholder Question</h4>
-        <form action="">
-            <input list="choices" name="choices">
-            <datalist id="choices">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-            </datalist>
-            <input type="submit">
-        </form>
-        <h3>Question 3</h3>
-        <h4>Placeholder Question</h4>
-        <form action="">
-            <input list="choices" name="choices">
-            <datalist id="choices">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-            </datalist>
-            <input type="submit">
-        </form>
-        <h3>Question 4</h3>
-        <h4>Placeholder Question</h4>
-        <form action="">
-            <input list="choices" name="choices">
-            <datalist id="choices">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-            </datalist>
-            <input type="submit">
-        </form>
-        <h3>Question 5</h3>
-        <h4>Placeholder Question</h4>
-        <form action="">
-            <input list="choices" name="choices">
-            <datalist id="choices">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-            </datalist>
-            <input type="submit">
-        </form>
-        <h3>Question 6</h3>
-        <h4>Placeholder Question</h4>
-        <form action="">
-            <input list="choices" name="choices">
-            <datalist id="choices">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-            </datalist>
-            <input type="submit">
-        </form>
-        <h3>Question 7</h3>
-        <h4>Placeholder Question</h4>
-        <form action="">
-            <input list="choices" name="choices">
-            <datalist id="choices">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-            </datalist>
-            <input type="submit">
-        </form>
-        <h3>Question 8</h3>
-        <h4>Placeholder Question</h4>
-        <form action="">
-            <input list="choices" name="choices">
-            <datalist id="choices">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-            </datalist>
-            <input type="submit">
-        </form>
-        <h3>Question 9</h3>
-        <h4>Placeholder Question</h4>
-        <form action="">
-            <input list="choices" name="choices">
-            <datalist id="choices">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-            </datalist>
-            <input type="submit">
-        </form>
-        <h3>Question 10</h3>
-        <h4>Plceholder Question</h4>
-        <form action="">
-            <input list="choices" name="choices">
-            <datalist id="choices">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-            </datalist>
-            <input type="submit">
-        </form>
-    </section>
+    <section class="container question-section">
+        <div class="question">
+            <h3>Question 1:</h3>
+            <h4>Pop-tarts are just desert ravioli</h4>
+            <select id="q1" class="browser-default">
+                <option value="" disable selected>Choices</option>
+                <option value="1">1 (Stongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Meh)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>  
+        </div> <!-- END OF QUESTION 1 -->
+         <div class="question">
+            <h3>Question 2:</h3>
+            <h4>Books are always better than the film adaptations</h4>
+            <select id="q2" class="browser-default">
+                <option value="" disable selected>Choices</option>
+                <option value="1">1 (Stongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Meh)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+        </div> <!-- END OF QUESTION 2 -->
+        <div class="question">
+            <h3>Question 3:</h3>
+            <h4>Veggie Burgers should not exist</h4>
+            <select id="q3" class="browser-default">
+                <option value="" disable selected>Choices</option>
+                <option value="1">1 (Stongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Meh)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+        </div> <!-- END OF QUESTION 3 -->
+        <div class="question">
+            <h3>Question 4:</h3>
+            <h4>Climate change is a real threat facing humanity</h4>
+            <select id="q4" class="browser-default">
+                <option value="" disable selected>Choices</option>
+                <option value="1">1 (Stongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Meh)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+        </div> <!-- END OF QUESTION 4 -->
+        <div class="question">
+            <h3>Question 5:</h3>
+            <h4>Libertarians are just Republicans who smoke weed</h4>
+            <select id="q5" class="browser-default">
+                <option value="" disable selected>Choices</option>
+                <option value="1">1 (Stongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Meh)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+        </div> <!-- END OF QUESTION 5 -->    
+        <div class="question">
+            <h3>Question 6:</h3>
+            <h4>Dogs are vastly better than cats</h4>
+            <select id="q6" class="browser-default">
+                <option value="" disable selected>Choices</option>
+                <option value="1">1 (Stongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Meh)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+        </div> <!-- END OF QUESTION 6 -->
+        <div class="question">
+            <h3>Question 7:</h3>
+            <h4>The Lord of the Rings is better then Harry Potter</h4>
+            <select id="q7" class="browser-default">
+                <option value="" disable selected>Choices</option>
+                <option value="1">1 (Stongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Meh)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+        </div> <!-- END OF QUESTION 7 -->
+        <div class="question">
+            <h3>Question 8:</h3>
+            <h4>The new Star Wars films are absolutley horrific</h4>
+            <select id="q8" class="browser-default">
+                <option value="" disable selected>Choices</option>
+                <option value="1">1 (Stongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Meh)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+        </div> <!-- END OF QUESTION 8 -->
+        <div class="question">
+            <h3>Question 9:</h3>
+            <h4>Peanut Butter should never go on a hamburger</h4>
+            <select id="q9" class="browser-default">
+                <option value="" disable selected>Choices</option>
+                <option value="1">1 (Stongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Meh)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+        </div> <!-- END OF QUESTION 9 -->
+        <div class="question">
+            <h3>Question 10:</h3>
+            <h4>Arrested Development is one of the best written shows of all time</h4>
+            <select id="q10" class="browser-default">
+                <option value="" disable selected>Choices</option>
+                <option value="1">1 (Stongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Meh)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+        </div> <!-- END OF QUESTION 10 -->
+    </section> <!--END OF QUESTION SECTION-->
 
-    <section class="submit-btn">
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
+    <section class=" container">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <!-- <i class="material-icons right"></i> -->
+            </button>
     </section>
 
     <!-- FOOTER -->
     <footer>
             <div class="container">
                 <p>
-                    <a href="#">API Friends List</a>
+                    <a href="/api/friends">API Friends List</a>
                     <span> | </span>
                     <a href="#">GitHub Repo</a>
                 </p>
             </div>
         </footer> <!-- END OF FOOTER-->
+        <!-- BS JQUERYM POPPER AND JAVASCRIPT -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- Materialize CSS Selecte tage override -->
+       
 </body>
 </html>

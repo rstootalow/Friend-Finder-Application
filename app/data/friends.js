@@ -162,3 +162,5 @@ var friend_data = [
         ]
     }
 ]
+
+module.exports = friends;
