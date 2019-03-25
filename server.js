@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 
 // establish application
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // make css files public
 app.use(express.static(path.join(__dirname, "public")));
