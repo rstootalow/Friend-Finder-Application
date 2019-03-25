@@ -4,22 +4,22 @@ const fs = require("fs");
 
 
 // ========== IMPORT FREINDS DATA
-var friends = require("../data/friends.js");
+var friends = require("../app/data/friends.js");
 
 //========== ROUTES ==========
 
 //EXPORT THE API ROUTES FROM OTHER FILES
 module.exports = function(app) {
     app.get("/api/friends", function(req, res) {
-        return res.json(friend_data);
+        return res.json(friends);
     });
 
     // ========== POST NEW USER FROM SURVEY ==========
     app.post("/api/friends", function(req, res) {
         //user object where data will be stored
-        userData = req.body
+        var userData = req.body
         // user scores to compare to existing friends in database
-        userScores = userData.scores;
+        var userScores = userData.scores;
 
         //object to store best match
         var compatibleMatch = {

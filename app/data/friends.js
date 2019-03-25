@@ -163,4 +163,4 @@ var friend_data = [
     }
 ]
 
-module.exports = friends;
+module.exports = friend_data;
