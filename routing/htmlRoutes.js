@@ -8,7 +8,7 @@ const fs = require("fs");
 module.exports = function(app) {
     // GET REQUEST TO THE SURVERY PAGE
     app.get("/survey", function(req, res) {
-        res.sendFile(path.join(__dirname + "/../public/SURVEY.html"));
+        res.sendFile(path.join(__dirname + "/../public/survey.html"));
     });
     //DEFAULT route that redirects to the home page. 
     app.use(function(req, res) {
