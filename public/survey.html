@@ -40,7 +40,7 @@
             <h3>Question 1:</h3>
             <h4>Pop-tarts are just desert ravioli</h4>
             <select id="q1" class="browser-default">
-                <option value="" disable selected>Choices</option>
+                <option value="" disabled selected>Choices</option>
                 <option value="1">1 (Stongly Disagree)</option>
                 <option value="2">2 (Disagree)</option>
                 <option value="3">3 (Meh)</option>
@@ -52,7 +52,7 @@
                 <h3>Question 2:</h3>
                 <h4>Books are always better than the film adaptations</h4>
                 <select id="q2" class="browser-default">
-                    <option value="" disable selected>Choices</option>
+                    <option value="" disabled selected>Choices</option>
                     <option value="1">1 (Stongly Disagree)</option>
                     <option value="2">2 (Disagree)</option>
                     <option value="3">3 (Meh)</option>
@@ -64,7 +64,7 @@
                 <h3>Question 3:</h3>
                 <h4>Veggie Burgers should not exist</h4>
                 <select id="q3" class="browser-default">
-                    <option value="" disable selected>Choices</option>
+                    <option value="" disabled selected>Choices</option>
                     <option value="1">1 (Stongly Disagree)</option>
                     <option value="2">2 (Disagree)</option>
                     <option value="3">3 (Meh)</option>
@@ -76,20 +76,19 @@
                 <h3>Question 4:</h3>
                 <h4>Climate change is a real threat facing humanity</h4>
                 <select id="q4" class="browser-default">
-                    <option value="" disable selected>Choices</option>
+                    <option value="" disabled selected>Choices</option>
                     <option value="1">1 (Stongly Disagree)</option>
                     <option value="2">2 (Disagree)</option>
                     <option value="3">3 (Meh)</option>
                     <option value="4">4 (Agree)</option>
                     <option value="5">5 (Strongly Agree)</option>
                 </select> 
-            </div>
-        </div> <!-- END OF QUESTION 4 -->
+            </div> <!-- END OF QUESTION 4 -->
         <div class="question input-field col s12">
                 <h3>Question 5:</h3>
                 <h4>Libertarians are just Republicans who smoke weed</h4>
                 <select id="q5" class="browser-default">
-                    <option value="" disable selected>Choices</option>
+                    <option value="" disabled selected>Choices</option>
                     <option value="1">1 (Stongly Disagree)</option>
                     <option value="2">2 (Disagree)</option>
                     <option value="3">3 (Meh)</option>
@@ -101,7 +100,7 @@
             <h3>Question 6:</h3>
             <h4>Dogs are vastly better than cats</h4>
             <select id="q6" class="browser-default">
-                <option value="" disable selected>Choices</option>
+                <option value="" disabled selected>Choices</option>
                 <option value="1">1 (Stongly Disagree)</option>
                 <option value="2">2 (Disagree)</option>
                 <option value="3">3 (Meh)</option>
@@ -113,7 +112,7 @@
             <h3>Question 7:</h3>
             <h4>The Lord of the Rings is better then Harry Potter</h4>
             <select id="q7" class="browser-default">
-                <option value="" disable selected>Choices</option>
+                <option value="" disabled selected>Choices</option>
                 <option value="1">1 (Stongly Disagree)</option>
                 <option value="2">2 (Disagree)</option>
                 <option value="3">3 (Meh)</option>
@@ -125,7 +124,7 @@
             <h3>Question 8:</h3>
             <h4>The new Star Wars films are absolutley horrific</h4>
             <select id="q8" class="browser-default">
-                <option value="" disable selected>Choices</option>
+                <option value="" disabled selected>Choices</option>
                 <option value="1">1 (Stongly Disagree)</option>
                 <option value="2">2 (Disagree)</option>
                 <option value="3">3 (Meh)</option>
@@ -137,7 +136,7 @@
             <h3>Question 9:</h3>
             <h4>Peanut Butter should never go on a hamburger</h4>
             <select id="q9" class="browser-default">
-                <option value="" disable selected>Choices</option>
+                <option value="" disabled selected>Choices</option>
                 <option value="1">1 (Stongly Disagree)</option>
                 <option value="2">2 (Disagree)</option>
                 <option value="3">3 (Meh)</option>
@@ -149,7 +148,7 @@
             <h3>Question 10:</h3>
             <h4>Arrested Development is one of the best written shows of all time</h4>
             <select id="q10" class="browser-default">
-                <option value="" disable selected>Choices</option>
+                <option value="" disabled selected>Choices</option>
                 <option value="1">1 (Stongly Disagree)</option>
                 <option value="2">2 (Disagree)</option>
                 <option value="3">3 (Meh)</option>
@@ -181,14 +180,14 @@
             <div class="modal-content">
                 <h3>Most Compatible Match</h3>
                 <div id="matchName"></div>
-                <img id="matchImage" class="materialboxed" width="650">
+                <img id="matchImage" class="materialboxed" width="650" alt="Compatible Match Image">
             </div>
         </div>
 
         
         <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
         <!-- Javascript -->
-        <script type="text/javascript">
+        <script>
             $(document).ready(function() {
                 $("select").formSelect();
 
