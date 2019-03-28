@@ -170,7 +170,7 @@
                 <p>
                     <a href="/api/friends">API Friends List</a>
                     <span> | </span>
-                    <a href="#">GitHub Repo</a>
+                    <a  target="_blank" href="https://github.com/rstootalow/Friend-Finder-Application">GitHub Repo</a>
                 </p>
             </div>
         </footer> <!-- END OF FOOTER-->
@@ -180,7 +180,7 @@
             <div class="modal-content">
                 <h3>Most Compatible Match</h3>
                 <div id="matchName"></div>
-                <img id="matchImage" class="materialboxed" width="650" alt="Compatible Match Image">
+                <img src="" id="matchImage" class="materialboxed" width="650" alt="Compatible Match Image">
             </div>
         </div>
 
@@ -188,6 +188,8 @@
         <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
         <!-- Javascript -->
         <script>
+        
+        
             $(document).ready(function() {
                 $("select").formSelect();
 
@@ -196,43 +198,43 @@
                     opacity: .75,
                     inDuration: 200,
                     outDuration: 300,
-                    startingTop: "3%",
-                    endingTop: "8%"
-                });
-            });
-
-            // SUBMIT BUTTON FUNCTIONALITY
-
-            $("#submitBtn").on("click", function(event) {
-                event.preventDefault();
-
-                // take user answers and store in object
-                var input = {
-                    name: $("#name").val().trim(),
-                    photo: $("#photo").val().trim(),
-                    scores: [
-                        $("#q1").val().trim(),
-                        $("#q2").val().trim(),
-                        $("#q3").val().trim(),
-                        $("#q4").val().trim(),
-                        $("#q5").val().trim(),
-                        $("#q6").val().trim(),
-                        $("#q7").val().trim(),
-                        $("#q8").val().trim(),
-                        $("#q9").val().trim(),
-                        $("#q10").val().trim(),
-                    ]
-                };
-
-                $.post("/api/friends", input)
-                    .then(function(data) {
-                        $("#matchName").html(data.name);
-                        $("#matchName").html(data.photo);
-
-                        // POPULATE MODAL ON MATCH
-                        $("#modal1").modal("open");
+                            startingTop: "3%",
+                            endingTop: "8%"
+                        });
                     });
-            });
+
+                    // SUBMIT BUTTON FUNCTIONALITY
+
+                    $("#submitBtn").on("click", function(event) {
+                        event.preventDefault();
+
+                        // take user answers and store in object
+                        var input = {
+                            name: $("#name").val().trim(),
+                            photo: $("#photo").val().trim(),
+                            scores: [
+                                $("#q1").val().trim(),
+                                $("#q2").val().trim(),
+                                $("#q3").val().trim(),
+                                $("#q4").val().trim(),
+                                $("#q5").val().trim(),
+                                $("#q6").val().trim(),
+                                $("#q7").val().trim(),
+                                $("#q8").val().trim(),
+                                $("#q9").val().trim(),
+                                $("#q10").val().trim(),
+                            ]
+                        };
+
+                        $.post("/api/friends", input)
+                            .done(function(data) {
+                                $("#matchName").html(data.matchName);
+                                $("#matchName").attr("src", data.matchImage);
+
+                                // POPULATE MODAL ON MATCH
+                                $("#modal1").modal("open");
+                            });
+                    });
         </script>
        
 </body>
