@@ -3,8 +3,8 @@ const path = require("path");
 const fs = require("fs");
 
 
-// ========== IMPORT FREINDS DATA
-var friends = require("../app/data/friends.js");
+// ========== IMPORT FRieNDS DATA
+var friend_data = require("../app/data/friends.js");
 
 //========== ROUTES ==========
 
@@ -48,7 +48,7 @@ module.exports = function(app) {
         }
         //push data back in to userData object
         friend_data.push(userData);
-        //then return a json object with the most compatable match
+        //then return a json object with the most compatible match
         res.json(compatibleMatch);
 
     });

@@ -82,7 +82,7 @@ var friend_data = [
         ]
     },
     {
-        "name": "Kevinn",
+        "name": "Kevin",
         "photo": "https://i.imgur.com/bjch48K.jpg",
         "scores": [
             "5",

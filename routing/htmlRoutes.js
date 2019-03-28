@@ -6,7 +6,7 @@ const fs = require("fs");
 
 // export modules to application
 module.exports = function(app) {
-    // GET REQUEST TO THE SURVERY PAGE
+    // GET REQUEST TO THE SURVEY PAGE
     app.get("/survey", function(req, res) {
         res.sendFile(path.join(__dirname + "/../public/survey.html"));
     });
